@@ -1,0 +1,20 @@
+{
+    "name": "punkrock43/transilvanian-brew",
+    "description": "website for university deployed with heroku",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "public/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.7"
+    },
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "punkrock43",
+            "email": "razvan_popus@yahoo.ro"
+        }
+    ]
+}
