@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Liceul Teoretic Tudor Vladimirescu</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--Pagina Liceu-->
+        <section class="sub-header-liceu">
+            <nav>
+                <a href="index.html"><img src="Imagini/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick ="hideMenu()"></i>
+                    <ul>
+                        <li><a href="Istoric.html">ISTORIC</a></li>
+                        <li><a href="Organigrama.html">ORGANIGRAMĂ</a></li>
+                        <li><a href="Elevi.html">ELEVI</a></li>
+                        <li><a href="Educatie.html">EDUCAȚIE</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick ="showMenu()"></i>
+            </nav>
+            <h1>Istoric</h1>
+        </section>
+        <section class="despre-noi">
+           <div class="row">
+                <div class="despre-noi-col">
+                    <h1>
+                        Scurt Istoric
+                    </h1>
+                    <p>
+                        <br>Liceul Liceul Teoretic Tudor Vladimirescu a fost fondat în anul 1994 pe bulevardul Iuliu Maniu nr. 15, sector 6.
+                        Bucureşti, şi funcţionează sub călăuzirea Inspectoratului Şcolar al Judeţului Bucureşti.
+                        <br><br>Liceul Liceul Teoretic Tudor Vladimirescu este o instituţie şcolară finanţată de către stat, fiind cuprinsă în reţeaua şcolilor subordonate Ministerului Educaţiei şi Cercetării şi Inspectoratului Şcolar Judeţean Bucureşti şi funcţionează din anul 1994 pe baza Dispoziţiei cu nr. 73 din 23.06.1994, iniţial sub denumirea de Gimnaziul unic „C. Dobrogeanu –Gherea”, denumire care a fost schimbată în anul 2001 prin Dispoziţia cu nr. 3093 din 18.05.2001 de către ISJ Bucureşti, în Liceul Teoretic Tudor Vladimirescu. iar din anul şcolar 2005-2006.
+                        Din 1994 şi până în anul şcolar 2004-2005 liceul a funcţionat în clădirea din bulevardul Iuliu Maniu nr. 15, sector 6 în cele 10 săli de clasă.
+                        Anual şcoala s-a dezvoltat numeric şi prin introducerea ciclului gimnazial începând cu anul şcolar 2000-2001 fapt ce a dus la demararea unui proiect de construcţie a unei noi clădiri. 
+                        <br><br>Începând cu anul şcolar 2005-2006, Liceul Liceul Teoretic Tudor Vladimirescu îşi desfăşoară activitatea într-o clădire nouă ce a fost inaugurată odată cu începerea noului an şcolar, respectiv în 12 septembrie 2005.
+                    </p>
+                </div>
+                <div class="despre-noi-col">
+                    <img src="Imagini/imagine_liceu1.jpg">
+                </div>
+           </div> 
+        </section>
+        <!--Functie pentru arata/ascunde meniu JavaScript-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-400px";
+        }
+    </script>
+    </body>
+    <footer class="footer">
+        <p class="scrisFooter">&#169;2023 Liceul Teoretic Tudor Vladimirescu</p>
+    </footer>
+</html>

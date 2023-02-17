@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Liceul Teoretic Tudor Vladimirescu</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--Pagina Elevi Admitere-->
+        <section class="sub-header-elevi">
+            <nav>
+                <a href="index.html"><img src="Imagini/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick ="hideMenu()"></i>
+                    <ul>
+                        <li><a href="Istoric.html">ISTORIC</a></li>
+                        <li><a href="Organigrama.html">ORGANIGRAMĂ</a></li>
+                        <li><a href="Elevi.html">ELEVI</a></li>
+                        <li><a href="Educatie.html">EDUCAȚIE</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick ="showMenu()"></i>
+            </nav>
+            <h1>Admitere</h1>
+        </section>
+        <section class="anunt">
+            <div class="row">
+                <div class="admitere">
+                    <h>Rezultate Admitere Științele Naturii 2023</h>
+                    <p>Rezultate Admitere an școlar 2022 - 2023, Filiera Reală, Profilul Științele Naturii .</p>
+                    <a href="https://isjph.ro/wp-content/uploads/2022/08/REZULTATE-ADMITERE-INVATAMANT-LICEAL-ETAPA-A-II-A.pdf">Rezultate_Admitere_Științele_Naturii_2023</a>
+                </div>
+                <div class="admitere">
+                    <h>Rezultate Admitere Matematică-Informatică 2023</h>
+                    <p>Rezultate Admitere an școlar 2022 - 2023, Filiera Reală, ProfilulMatematică-Informatică .</p>
+                    <a href="https://isjph.ro/wp-content/uploads/2022/08/REZULTATE-ADMITERE-INVATAMANT-LICEAL-ETAPA-A-II-A.pdf">Rezultate_Admitere_Matematică_Informatică_2023</a>
+                </div>
+                <div class="admitere">
+                    <h>Rezultate Admitere Filologie 2023</h>
+                    <p>Rezultate Admitere an școlar 2022 - 2023, Filiera Reală, Profilul Filologie .</p>
+                    <a href="https://isjph.ro/wp-content/uploads/2022/08/REZULTATE-ADMITERE-INVATAMANT-LICEAL-ETAPA-A-II-A.pdf">Rezultate_Admitere_Filologie_2023</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="admitere">
+                    <h>Contract Educational<br></h>
+                    <a href="http://www.lttvb.ro/images/documente/Inscriere/Contract_educational.pdf">Contract_Educational_Elevi_2023</a>
+                </div>
+                <div class="admitere">
+                    <h>Prelucrare Date Personale<br></h>
+                    <a href="http://www.lttvb.ro/images/documente/Inscriere/Fisa_prezentare_cabinet_medical.pdf">Prelucrare_Date_Personale_Cabinet_Medical_2023</a>
+                </div>
+                <div class="admitere">
+                    <h>Prezentare Cabinet Medical<br></h>
+                    <a href="http://www.lttvb.ro/images/documente/Inscriere/Fisa_prezentare_cabinet_medical.pdf">Fisa_Prezentare_Cabinet_Medical_2023</a>
+                </div>
+        </section>
+        <!--Functie pentru arata/ascunde meniu JavaScript-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-400px";
+        }
+    </script>
+    </body>
+    <footer class="footer">
+        <p class="scrisFooter">&#169;2023 Liceul Teoretic Tudor Vladimirescu</p>
+    </footer>
+</html>

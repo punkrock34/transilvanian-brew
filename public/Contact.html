@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>Liceul Teoretic Tudor Vladimirescu</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--Pagina Contact-->
+        <section class="sub-header-contact">
+            <nav>
+                <a href="index.html"><img src="Imagini/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick ="hideMenu()"></i>
+                    <ul>
+                        <li><a href="Istoric.html">ISTORIC</a></li>
+                        <li><a href="Organigrama.html">ORGANIGRAMĂ</a></li>
+                        <li><a href="Elevi.html">ELEVI</a></li>
+                        <li><a href="Educatie.html">EDUCAȚIE</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick ="showMenu()"></i>
+            </nav>
+            <h1>Contact</h1>
+        </section>
+        <section class="informatii-contact">
+            <div class="contact">
+                <div class="row">
+                    <div class="contact-col">
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Bucureşti</h5>
+                            <p>Bulevardul Iuliu Maniu nr. 15, Sector 6</p>
+                        </span>
+                    </div>
+                    <div class="contact-col">
+                        <i class="fa fa-phone"></i>
+                        <span>
+                             <h5>0214 103 831</h5>
+                             <p>Luni - Vineri, 09:00 - 15:00<p>
+                        </span>
+                    </div>
+                    <div class="contact-col">
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                             <h5>liceul_tvladimirescu@gmail.ro</h5>
+                             <p>Email-ul oficial al instituţiei</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <form action="/action_page.php">
+                  <label for="fname">Nume</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Nume...">
+
+                  <label for="lname">Prenume</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Prenume...">
+
+                  <label for="country">Email</label>
+                  <input type="text" id="mail" name="email" placeholder="Email...">
+
+                  </select>
+
+                  <label for="subject">Subiect</label>
+                  <textarea id="subject" name="subject" placeholder="Continut..." style="height:100px"></textarea>
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=liceul_tvladimirescu@gmail.ro">Trimite</a>
+                </form>
+              </div>
+            <div class="harta">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d712.2367950062155!2d26.042263263985518!3d44.
+                43424569199293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201c87d37ef37%3A0x2c32810f398e957e!2sLiceul%20Teoretic%20%22TUDOR%20VLADIMIRESCU%22!5e0!3m2!1sro!2sro!4v1672763759132!5m2!1sro!2sro"
+                width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!--Functie pentru arata/ascunde meniu JavaScript-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-400px";
+        }
+    </script>
+    </body>
+    <footer class="footer">
+        <p class="scrisFooter">&#169;2023 Transilvanian brew</p>
+    </footer>
+</html>
