@@ -1,6 +1,6 @@
 <?php include_once('global.php'); ?>
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
