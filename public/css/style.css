@@ -9707,15 +9707,17 @@ h6,
   }
 }
 
-//menu-item-content center on image with position absolute
+//make text pop out on the image with z-index as well
 .menu-item-content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity:0;
-  transition: opacity 0.5s;
-  transition-direction: both;
+  z-index: 9;
+  background: rgba(51, 33, 29, 0.7);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+//center menu-item-content without position absolute inside the flex div
+.menu-item-content{
+  margin-left: auto;
 }
 
 .menu-item:hover .menu-item-content{

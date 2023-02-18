@@ -41,7 +41,7 @@
                 <div class="col-sm-4 text-center mb-3">
                     <i class="fa fa-2x fa-map-marker-alt mb-3 text-primary"></i>
                     <h4 class="font-weight-bold">Adresă</h4>
-                    <p> Strada Avram Iancu nr. 20, Cluj-Napoca</p>
+                    <p>Strada Avram Iancu nr. 20, Cluj-Napoca</p>
                 </div>
                 <div class="col-sm-4 text-center mb-3">
                     <i class="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
