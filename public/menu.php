@@ -57,9 +57,9 @@
                                     <img src="' . $coffee['image'] . '" alt="' . $coffee['title'] . '">
                                 </div>
                                 <div class="menu-item-content">
-                                    <h4 class="text-uppercase">' . $coffee['title'] . '</h4>
+                                    <p class="text-uppercase">' . $coffee['title'] . '</p>
                                     <p class="text-primary">' . $coffee['price'] . ' RON</p>
-                                    <i class="fa fa-eye"></i>
+                                    <p><i class="fa fa-eye"></i></p>
                                 </div>
                             </div>
                         ';

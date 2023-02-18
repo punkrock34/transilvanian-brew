@@ -9663,13 +9663,8 @@ h6,
   border-bottom: 1px solid #DA9F5B;
 }
 
-.menu-item:last-of-type{
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
-}
 
-.menu-item .menu-item-content{
+.menu-item{
   display: flex;
   align-items: center;
 }
@@ -9688,24 +9683,11 @@ h6,
   opacity:1;
 }
 
-
-.menu-item .menu-item-content p{
-  font-weight: bold;
-  color: #DA9F5B;
-}
-
-.menu-item .menu-item-content p{
-  font-weight: normal;
-  font-size: 16px;
-  color: #33211D;
-}
-
 .menu-item .menu-item-img{
   margin-left: 15px;
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   overflow: hidden;
-  border-radius: 100px;
 }
 
 .menu-item .menu-item-img img{
@@ -9720,44 +9702,43 @@ h6,
     align-items: flex-start;
   }
 
-  .menu-item .menu-item-content{
-    margin-bottom: 15px;
-  }
-
-  .menu-item .menu-item-content .menu-title{
-    margin-right: 15px;
-  }
-
   .menu-item .menu-item-img{
     margin-left: 0;
   }
 }
 
-.menu-item{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #DA9F5B;
+//menu-item-content center on image with position absolute
+.menu-item-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity:0;
+  transition: opacity 0.5s;
+  transition-direction: both;
 }
 
-.menu-item:last-of-type{
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
+.menu-item:hover .menu-item-content{
+  opacity:1;
 }
 
-.menu-item .menu-item-content{
-  display: flex;
-  align-items: center;
+//make text pop out on the image
+.menu-item-content{
+  background: rgba(51, 33, 29, 0.7);
+  padding: 15px;
+  border-radius: 5px;
 }
 
-.menu-item .menu-item-content .menu-title{
-  font-weight: bold;
+
+.menu-item-content p{
+  color: #FFFBF2;
 }
 
-.menu-item .menu-item-content .menu-price{
-  font-weight: bold;
-  color: #DA9F5B;
+//change font title bigger price smaller
+.menu-item-content p:first-of-type{
+  font-size: 1.5rem;
+}
+
+.menu-item-content p{
+  font-size: 1rem;
 }
