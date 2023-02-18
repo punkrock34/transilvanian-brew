@@ -1,0 +1,92 @@
+[
+    {
+      "id": 1,
+      "title": "Espresso",
+      "description": "O băutură de cafea concentrată, obținută prin trecerea apei fierbinți sub presiune prin cafeaua măcinată fin.",
+      "recipe": "Puneți cafeaua măcinată fin în filtru și presați ușor. Adăugați apă fierbinte la 90°C în espressoare și lăsați-l să curgă prin cafea timp de aproximativ 25 de secunde.",
+      "price": 9.99,
+      "available": true,
+      "image": "https://i.pinimg.com/564x/25/03/e5/2503e5f2b9ccab298f80514903cdf2cf.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Cappuccino",
+      "description": "O băutură de cafea cu lapte spumată și espresso.",
+      "recipe": "Preparați o cafea espresso și adăugați lapte spumat în proporții egale. Presărați deasupra cu puțină pudră de cacao.",
+      "price": 12.99,
+      "available": true,
+      "image": "https://i.imgur.com/PkBnre1.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Latte",
+      "description": "O băutură de cafea cu lapte și espresso.",
+      "recipe": "Preparați o cafea espresso și adăugați lapte cald într-un raport de 1:3. Presărați deasupra cu puțină scorțișoară.",
+      "price": 11.99,
+      "available": true,
+      "image": "https://i.pinimg.com/564x/55/f8/7b/55f87b082c2e6f655957e29725e8a0d8.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Mocha",
+      "description": "O băutură de cafea cu lapte, ciocolată și espresso.",
+      "recipe": "Preparați o cafea espresso și adăugați lapte cald și sirop de ciocolată. Amestecați bine și presărați deasupra cu puțină pudră de cacao.",
+      "price": 13.99,
+      "available": true,
+      "image": "https://i.pinimg.com/564x/24/58/ef/2458eff64455bf2c622fb5aa79a58d9b.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Americano con Panna",
+        "description": "Un espresso lung și bogat, acoperit cu frișcă densă și aromată.",
+        "recipe": "Preparați un espresso și adăugați apă fierbinte până când obțineți un volum de 240 ml. Adăugați o lingură de frișcă și serviți cald.",
+        "price": 10.99,
+        "available": true,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Caffè_con_panna.jpg/1200px-Caffè_con_panna.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Flat White",
+        "description": "Un espresso cu o cantitate mică de lapte aburit, servit într-un pahar de sticlă.",
+        "recipe": "1 shot de espresso, 2 oz lapte aburit",
+        "price": 14.5,
+        "available": true,
+        "image": "https://i.pinimg.com/564x/d6/90/b2/d690b2a6562b28aa6ea9be70f850ac76.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Latte Macchiato",
+        "description": "Un amestec de lapte aburit și espresso, cu strat de spumă de lapte la suprafață.",
+        "recipe": "1 shot de espresso, 8 oz lapte aburit, spumă de lapte",
+        "price": 16.0,
+        "available": true,
+        "image": "https://i.pinimg.com/736x/ac/e7/ce/ace7ce0892f6c4359ce49d573477eb40.jpghttps://i.pinimg.com/736x/ac/e7/ce/ace7ce0892f6c4359ce49d573477eb40.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Transilvanian Brew",
+        "description": "Un amestec unic de cafea cu mirodenii speciale.",
+        "recipe": "Puneți 2 linguri de cafea într-un filtru de hârtie. Adăugați apă fierbinte și lăsați să se infuzeze timp de 5 minute. Adăugați scorțișoară și vanilie după gust și serviți.",
+        "price": 16.5,
+        "available": true,
+        "image": "https://i.pinimg.com/564x/d6/fe/0f/d6fe0ff1cbeb537bb3f88ebf096a0c72.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Transilvanian Brew Caramel Latte",
+        "description": "Un amestec de espresso, lapte spumat, sirop de caramel și un strop de vanilie, servit cu caramel și frișcă.",
+        "recipe": "1 shot de espresso, 150 ml lapte spumat, 30 ml sirop de caramel, 1 strop de esență de vanilie, caramel și frișcă pentru decor",
+        "price": 18,
+        "available": true,
+        "image": "https://i.pinimg.com/736x/ea/7c/19/ea7c19e8385ec58c8ce109f149356589.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Transilvanian Brew Chai Latte",
+        "description": "Un amestec de ceai negru cu arome exotice, lapte spumat și condimente, servit cu scorțișoară și frișcă.",
+        "recipe": "2 pliculețe de ceai negru, 180 ml lapte spumat, 30 ml sirop de vanilie, 1 praf de scorțișoară, frișcă și scorțișoară pentru decor",
+        "price": 16,
+        "available": true,
+        "image": "https://i.pinimg.com/736x/c7/4e/58/c74e58011f23daac6f618847de079576.jpg"
+      }
+]
