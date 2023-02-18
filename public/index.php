@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Transilvanian Brew - Coffee Shop HTML Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name = "description" content = "">
