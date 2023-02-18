@@ -1,6 +1,6 @@
 <?php
 
-    $base = "https://transilvanian-brew.herokuapp.com";
+    $base = "https://transilvanian-brew.herokuapp.com/";
     $url = $_SERVER['REQUEST_URI'];
 
     $lang = "ro";
