@@ -11,8 +11,8 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav ml-auto p-4">
                 <a href="index.html" class="nav-item nav-link">Acasă</a>
-                <a href="about.html" class="nav-item nav-link">Despre noi</a>
-                <a href="menu.html" class="nav-item nav-link">Meniu</a>
+                <a href="despre-noi.html" class="nav-item nav-link">Despre noi</a>
+                <a href="meniu.html" class="nav-item nav-link">Meniu</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
         </div>

@@ -30,7 +30,7 @@
     <!-- Page Header End -->
 
 
-    <!-- About Start -->
+    <!-- despre-noi Start -->
     <div class="container-fluid py-5">
         <div class="container">
             <div class="section-title">
@@ -45,7 +45,7 @@
                 </div>
                 <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/about.png" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="img/despre-noi.png" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-4 py-0 py-lg-5">
@@ -59,7 +59,7 @@
             </div>
         </div>
     </div>
-    <!-- About End -->
+    <!-- despre-noi End -->
 
 
     <?php include_once('footer.php'); ?>
