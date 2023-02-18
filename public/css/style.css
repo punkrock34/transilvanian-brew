@@ -9678,6 +9678,17 @@ h6,
   font-weight: bold;
 }
 
+.menu-item-content{
+  opacity:0;
+  transition: opacity 0.5s;
+  transition-direction: both;
+}
+
+.menu-item:hover .menu-item-content{
+  opacity:1;
+}
+
+
 .menu-item .menu-item-content p{
   font-weight: bold;
   color: #DA9F5B;
@@ -9687,6 +9698,14 @@ h6,
   font-weight: normal;
   font-size: 16px;
   color: #33211D;
+}
+
+.menu-item .menu-item-img{
+  margin-left: 15px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 100px;
 }
 
 .menu-item .menu-item-img img{

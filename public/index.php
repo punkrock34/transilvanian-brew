@@ -175,8 +175,9 @@
 
                     ?>
 
+                </div>
+                <div class = "col-lg-12">
                     <button class="btn btn-primary font-weight-bold px-4" type="button" href = "meniu.html">Vezi mai mult</button>
-
                 </div>
             </div>
         </div>
