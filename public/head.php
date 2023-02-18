@@ -1,4 +1,3 @@
-<?php ?>
 <base href="<?php echo $base; ?>">
 <!-- Favicon -->
 <link href="img/favicon.ico" rel="icon">
