@@ -159,7 +159,7 @@
                             //divs with background as image and on hover show a eye icon in the center on click it will do something with javascript
                             echo
                             '
-                                <div class="menu-item" id = "'.$coffee["id"].'" style = "width:300px; height:auto;">
+                                <div class="menu-item" id = "'.$coffee["id"].'">
                                     <div class="menu-item-img">
                                         <img src="'.$coffee['image'].'" alt="'.$coffee['title'].'">
                                     </div>
