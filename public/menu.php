@@ -38,31 +38,33 @@
                 <h3 class="display-4">Prețuri Competitive</h3>
             </div>
             <div class="row">
-                <div class="col-lg-12" id = "coffees">
+                <div class="col-lg-12 d-flex justify-content-center" id="coffees">
 
                     <?php
-                        //get data from coffees.json file
-                        $json = file_get_contents('data/coffees.json');
+                    //get data from coffees.json file
+                    $json = file_get_contents('data/coffees.json');
 
-                        //decode json to associative array
-                        $data = json_decode($json, true);
+                    //decode json to associative array
+                    $data = json_decode($json, true);
 
-                        foreach($data as $coffee){
-                            //divs with background as image and on hover show a eye icon in the center on click it will do something with javascript
-                            echo
-                            '
-                                <div class="menu-item d-flex justify-content-center" id = "'.$coffee["id"].'">
-                                    <div class="menu-item-img">
-                                        <img src="'.$coffee['image'].'" alt="'.$coffee['title'].'">
-                                    </div>
-                                    <div class="menu-item-content m-0 d-flex justify-content-center">
-                                        <h4 class="text-uppercase">'.$coffee['title'].'</h4>
-                                        <p class="text-primary">'.$coffee['price'].' RON</p>
-                                        <i class="fa fa-eye"></i>
-                                    </div>
+                    foreach ($data as $coffee) {
+
+                        //divs with background as image and on hover show a eye icon in the center on click it will do something with javascript
+                        echo
+                        '
+                            <div class="menu-item" id = "' . $coffee["id"] . '" style = "width:300px; height:auto;">
+                                <div class="menu-item-img">
+                                    <img src="' . $coffee['image'] . '" alt="' . $coffee['title'] . '">
                                 </div>
-                            ';
-                        }
+                                <div class="menu-item-content">
+                                    <h4 class="text-uppercase">' . $coffee['title'] . '</h4>
+                                    <p class="text-primary">' . $coffee['price'] . ' RON</p>
+                                    <i class="fa fa-eye"></i>
+                                </div>
+                            </div>
+                        ';
+
+                    }
 
                     ?>
 
