@@ -1,6 +1,9 @@
 RewriteEngine On
 
-RewriteRule index\.html$ index.php? [NC,L,QSA]
+
+RewriteRule index\.html / [R=301,L]
+
+RewriteRule /$ index.php? [NC,L,QSA]
 RewriteRule about\.html$ about.php? [NC,L,QSA]
 RewriteRule contact\.html$ contact.php? [NC,L,QSA]
 RewriteRule menu\.html$ menu.php? [NC,L,QSA]
