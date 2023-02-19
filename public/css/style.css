@@ -9654,93 +9654,67 @@ h6,
 }
 
 
-.menu-item{
+#coffee-items{
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #DA9F5B;
+  padding: 20px;
 }
-
 
 .menu-item{
-  display: flex;
-  align-items: center;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
 }
 
-.menu-item .menu-item-content .menu-title{
-  font-weight: bold;
+//.menu-item-img full  width of the menu-item
+.menu-item-img{
+  width: 100%;
+  height: 200px;
 }
 
-.menu-item-content{
-  opacity:0;
-  transition: opacity 0.5s;
-  transition-direction: both;
-}
-
-.menu-item:hover .menu-item-content{
-  opacity:1;
-}
-
-.menu-item .menu-item-img{
-  margin-left: 15px;
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-}
-
-.menu-item .menu-item-img img{
+.menu-item-img img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-@media (max-width: 991.98px) {
-  .menu-item{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu-item .menu-item-img{
-    margin-left: 0;
-  }
-}
-
-//make text pop out on the image with z-index as well
+//menu item  content on top of the image in the middle
 .menu-item-content{
-  z-index: 9;
-  background: rgba(51, 33, 29, 0.7);
-  padding: 15px;
-  border-radius: 5px;
-}
-
-//center menu-item-content without position absolute inside the flex div
-.menu-item-content{
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s ease both;
 }
 
 .menu-item:hover .menu-item-content{
-  opacity:1;
+  opacity: 1;
 }
 
-//make text pop out on the image
-.menu-item-content{
-  background: rgba(51, 33, 29, 0.7);
-  padding: 15px;
-  border-radius: 5px;
-}
-
-
-.menu-item-content p{
-  color: #FFFBF2;
-}
-
-//change font title bigger price smaller
-.menu-item-content p:first-of-type{
+.menu-item-content .title{
   font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-.menu-item-content p{
+.menu-item-content .price{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.menu-item-content .eye{
   font-size: 1rem;
+  font-weight: 400;
 }

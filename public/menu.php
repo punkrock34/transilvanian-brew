@@ -38,7 +38,7 @@
                 <h3 class="display-4">Prețuri Competitive</h3>
             </div>
             <div class="row">
-                <div class="col-lg-12 d-flex justify-content-center" id="coffees">
+                <div class="col-lg-12 d-flex justify-content-center" id = "coffee-items">
 
                     <?php
                     //get data from coffees.json file
@@ -57,9 +57,9 @@
                                     <img src="' . $coffee['image'] . '" alt="' . $coffee['title'] . '">
                                 </div>
                                 <div class="menu-item-content">
-                                    <p class="text-uppercase">' . $coffee['title'] . '</p>
-                                    <p class="text-primary">' . $coffee['price'] . ' RON</p>
-                                    <p><i class="fa fa-eye"></i></p>
+                                    <p class="text-uppercase title">' . $coffee['title'] . '</p>
+                                    <p class="text-primary price">' . $coffee['price'] . ' RON</p>
+                                    <p class="eye"><i class="fa fa-eye"></i></p>
                                 </div>
                             </div>
                         ';
