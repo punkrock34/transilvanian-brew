@@ -164,9 +164,7 @@
                                         <img src="' . $coffee['image'] . '" alt="' . $coffee['title'] . '">
                                     </div>
                                     <div class="menu-item-content">
-                                        <p class="text-primary title">' . $coffee['title'] . '</p>
-                                        <p class="text-primary price">' . $coffee['price'] . ' RON</p>
-                                        <p class="text-primary eye"><i class="fa fa-eye"></i></p>
+                                        <p class="eye">Detalii <i class="fa fa-eye"></i></p>
                                     </div>
                                 </div>
                             ';

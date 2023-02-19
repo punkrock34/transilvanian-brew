@@ -9696,19 +9696,11 @@ h6,
   opacity: 1;
 }
 
-.menu-item .menu-item-content .title{
+.menu-item .menu-item-content p{
   font-size: 20px;
-  font-weight: bold;
   color: #fff;
 }
 
-.menu-item .menu-item-content .price{
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.menu-item .menu-item-content .eye{
-  font-size: 14px;
+.menu-item .menu-item-content p > i {
   color: #fff;
 }
