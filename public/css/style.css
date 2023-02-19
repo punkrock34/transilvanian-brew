@@ -9684,27 +9684,33 @@ h6,
 }
 
 //menu item  content on top of the image in the middle
-.menu-item-content{
+.menu-item .menu-item-content{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  opacity: 0;
+  transition: .5s ease both;
 }
 
-.menu-item-content .title{
+.menu-item:hover .menu-item-content{
+  opacity: 1;
+}
+
+.menu-item .menu-item-content .title{
   font-size: 20px;
   font-weight: bold;
   color: #fff;
 }
 
-.menu-item-content .price{
+.menu-item .menu-item-content .price{
   font-size: 18px;
   font-weight: bold;
   color: #fff;
 }
 
-.menu-item-content .eye{
+.menu-item .menu-item-content .eye{
   font-size: 14px;
   color: #fff;
 }
