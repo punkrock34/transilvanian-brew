@@ -141,7 +141,7 @@
                 <h3 class="display-4">Prețuri Competitive</h3>
             </div>
             <div class="row">
-                <div class="col-lg-12 d-flex justify-content-center" id = "coffee-items">
+                <div class="col-lg-12" id = "coffee-items">
 
                     <?php
                         //get data from coffees.json file
@@ -175,7 +175,7 @@
 
                 </div>
                 <div class = "col-lg-12">
-                    <button class="btn btn-primary font-weight-bold px-4" type="button" href = "meniu.html">Vezi mai mult</button>
+                    <button class="btn btn-primary font-weight-bold px-4 w-100" type="button" href = "meniu.html">Vezi mai mult</button>
                 </div>
             </div>
         </div>
