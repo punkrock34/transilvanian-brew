@@ -103,8 +103,12 @@ window.addEventListener('load', function(){
     // coffee items
     const coffeItemsWrapper  = document.getElementById("coffee-items");
 
-    coffeItemsWrapper.childNodes.forEach(function(item){
+    coffeItemsWrapper.childNodes().forEach(function(item){
         item.addEventListener('click', function(){
+
+            //if element is has class .menu-item.content
+            if(!item.classList.contains('menu-item-content')) return;
+
             // get id of clicked item
             const id = item.id;
 
