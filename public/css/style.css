@@ -9684,37 +9684,26 @@ h6,
 
 //menu item  content on top of the image in the middle
 .menu-item-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  color: #fff;
-  opacity: 0;
-  transition: opacity 0.5s ease both;
-}
-
-.menu-item:hover .menu-item-content{
-  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .menu-item-content .title{
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .menu-item-content .price{
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .menu-item-content .eye{
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
 }
