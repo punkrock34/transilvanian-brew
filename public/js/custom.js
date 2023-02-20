@@ -112,18 +112,17 @@ window.addEventListener('load', function(){
             //get id from parent
             const id = parent.id;
 
-            console.log(parent);
-
             fetch("/data/coffees.json").then(function(response){
                 return response.json();
             }).then(function(data){
 
                 // get item from json based on id, array of objects
                 const itemData = data.find(function(item){
+
+                    console.log(id, item.id)
+
                     return item.id === id;
                 });
-
-                console.log(itemData);
 
                 // create modal
                 createModal(itemData);
