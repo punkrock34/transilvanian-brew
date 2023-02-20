@@ -9719,7 +9719,6 @@ h6,
   z-index: 1000;
   display: block;
   max-width: 1000px;
-  overflow: auto;
 }
 
 .background {
@@ -9784,6 +9783,7 @@ h6,
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: auto;
   }
 
   .modal img {
