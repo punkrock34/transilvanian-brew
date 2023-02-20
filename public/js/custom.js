@@ -22,6 +22,7 @@ window.addEventListener('load', function(){
 
         // div for text width 40% of modal
         const textDiv = document.createElement('div');
+        textDiv.style.overflowY = 'scroll';
 
         // append title to textDiv
         const title = document.createElement('h2');
