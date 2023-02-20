@@ -6,7 +6,8 @@ window.addEventListener('load', function(){
 
         // create modal 500px x 500px
         const modal = document.createElement('div');
-        modal.style.width = '500px';
+        modal.classList.add('modal');
+        modal.style.width = '70%';
         modal.style.height = '500px';
         modal.style.backgroundColor = 'white';
         modal.style.position = 'fixed';
@@ -15,20 +16,9 @@ window.addEventListener('load', function(){
         modal.style.transform = 'translate(-50%, -50%)';
         modal.style.zIndex = '1000';
 
-        // create close button
-        const closeButton = document.createElement('button');
-        closeButton.id = 'modal-close';
-        closeButton.innerHTML = 'X';
-        closeButton.style.position = 'absolute';
-        closeButton.style.top = '0';
-        closeButton.style.right = '0';
-        closeButton.style.backgroundColor = 'transparent';
-        closeButton.style.border = 'none';
-        closeButton.style.fontSize = '2rem';
-        closeButton.style.cursor = 'pointer';
-
         //create background behind modal
         const background = document.createElement('div');
+        background.classList.add('background');
         background.style.width = '100%';
         background.style.height = '100%';
         background.style.backgroundColor = 'rgba(0,0,0,0.5)';
@@ -41,6 +31,7 @@ window.addEventListener('load', function(){
         const image = document.createElement('img');
         image.src = itemData.image;
         image.style.width = '60%';
+        image.style.height = '100%';
         image.style.display = 'block';
         //float left
         image.style.float = 'left';
@@ -107,8 +98,9 @@ window.addEventListener('load', function(){
         document.body.appendChild(modal);
         document.body.appendChild(background);
 
-        // add event listener to close button
-        closeButton.addEventListener('click', function(){
+
+        //click outside modal to close listener
+        background.addEventListener('click', function(){
             deleteModal();
         });
     }
@@ -116,15 +108,14 @@ window.addEventListener('load', function(){
     function deleteModal(){
         const modal = document.querySelector('.modal');
         const background = document.querySelector('.background');
-        const closeButton = document.getElementById('modal-close');
-        // remove modal and backgroung from body
-        document.body.removeChild(modal);
-        document.body.removeChild(background);
 
-        // remove event listener from close button
-        closeButton.removeEventListener('click', function(){
+        background.removeEventListener('click', function(){
             deleteModal();
         });
+
+        // remove modal and background from body
+        modal.remove();
+        background.remove();
     }
 
     // coffee items
