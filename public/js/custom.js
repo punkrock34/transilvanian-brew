@@ -8,6 +8,9 @@ window.addEventListener('load', function(){
         const modal = document.createElement('div');
         modal.classList.add('modal');
 
+        const closeButtonMobile = document.createElement('i');
+        closeButtonMobile.classList.add('fas', 'fa-times', 'close-button-mobile');
+
         //create background behind modal
         const background = document.createElement('div');
         background.classList.add('background');
@@ -56,13 +59,23 @@ window.addEventListener('load', function(){
         background.addEventListener('click', function(){
             deleteModal();
         });
+
+        //close button listener
+        closeButtonMobile.addEventListener('click', function(){
+            deleteModal();
+        });
     }
 
     function deleteModal(){
         const modal = document.querySelector('.modal');
         const background = document.querySelector('.background');
+        const closeButtonMobile = document.querySelector('.close-button-mobile');
 
         background.removeEventListener('click', function(){
+            deleteModal();
+        });
+
+        closeButtonMobile.removeEventListener('click', function(){
             deleteModal();
         });
 
