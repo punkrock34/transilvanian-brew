@@ -93,14 +93,17 @@ window.addEventListener('load', function(){
         price.style.justifySelf = 'flex-end';
 
 
+        //append title, description, recipe, price to textDiv
+        textDiv.appendChild(title);
+        textDiv.appendChild(description);
+        textDiv.appendChild(recipe);
+        textDiv.appendChild(price);
 
-        // append modal to body
+        // append image and textDiv to modal
         modal.appendChild(closeButton);
         modal.appendChild(image);
-        modal.appendChild(title);
-        modal.appendChild(description);
-        modal.appendChild(recipe);
-        modal.appendChild(price);
+        modal.appendChild(textDiv);
+
         document.body.appendChild(modal);
         document.body.appendChild(background);
 
