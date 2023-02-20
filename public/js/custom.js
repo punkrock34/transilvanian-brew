@@ -15,6 +15,8 @@ window.addEventListener('load', function(){
         modal.style.left = '50%';
         modal.style.transform = 'translate(-50%, -50%)';
         modal.style.zIndex = '1000';
+        modal.style.display = 'block';
+        modal.style.maxWidth = '1000px';
 
         //create background behind modal
         const background = document.createElement('div');
@@ -80,10 +82,10 @@ window.addEventListener('load', function(){
         price.style.fontSize = '1rem';
         price.style.fontWeight = 'normal';
         price.style.color = "#000";
-        //justify self flex-end to align to bottom right of div
-        price.style.alignSelf = 'flex-end';
-        price.style.justifySelf = 'flex-end';
+        price.style.marginTop = 'auto';
 
+        //add  ron text to price
+        price.appendChild(document.createTextNode(' RON'));
 
         //append title, description, recipe, price to textDiv
         textDiv.appendChild(title);
