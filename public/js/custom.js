@@ -106,8 +106,13 @@ window.addEventListener('load', function(){
 
     coffeItemsWrapper.querySelectorAll('.menu-item p, .menu-item i').forEach(function(item){
         item.addEventListener('click', function(){
-            // get id of clicked item
-            const id = item.id;
+            // get last parent of the item clicked
+            const parent = item.parentElement.parentElement;
+
+            //get id from parent
+            const id = parent.id;
+
+            console.log(parent);
 
             fetch("/data/coffees.json").then(function(response){
                 return response.json();
@@ -115,8 +120,6 @@ window.addEventListener('load', function(){
 
                 // get item from json based on id, array of objects
                 const itemData = data.find(function(item){
-                    console.log(item);
-                    console.log(item.id);
                     return item.id === id;
                 });
 
