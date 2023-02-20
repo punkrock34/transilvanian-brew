@@ -104,12 +104,8 @@ window.addEventListener('load', function(){
     // coffee items
     const coffeItemsWrapper  = document.getElementById("coffee-items");
 
-    coffeItemsWrapper.querySelectorAll('.menu-item').forEach(function(item){
+    coffeItemsWrapper.querySelectorAll('.menu-item p, .menu-item i').forEach(function(item){
         item.addEventListener('click', function(){
-
-            //if element is not of type p or i then return
-            if(item.tagName !== 'P' && item.tagName !== 'I') return;
-
             // get id of clicked item
             const id = item.id;
 
