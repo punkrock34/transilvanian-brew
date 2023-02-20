@@ -41,10 +41,10 @@ window.addEventListener('load', function(){
         // div for text width 40% of modal
         const textDiv = document.createElement('div');
         textDiv.style.width = '50%';
+        textDiv.style.height = '100%';
         textDiv.style.float = 'right';
         textDiv.style.display = 'flex';
         textDiv.style.flexDirection = 'column';
-        textDiv.style.justifyContent = 'space-between';
 
         // append title to textDiv
         const title = document.createElement('h2');
@@ -55,6 +55,7 @@ window.addEventListener('load', function(){
         title.style.fontWeight = 'bold';
         title.style.color = "#da9f5b";
         title.style.alignSelf = "center";
+        title.style.marginBottom = '1rem';
 
         // append description to textDiv
         const description = document.createElement('p');
@@ -64,6 +65,7 @@ window.addEventListener('load', function(){
         description.style.fontSize = '1rem';
         description.style.fontWeight = 'normal';
         description.style.color = "#000";
+        description.style.marginBottom = '1rem';
 
         // append recipe to textDiv
         const recipe = document.createElement('p');
@@ -73,6 +75,7 @@ window.addEventListener('load', function(){
         recipe.style.fontSize = '1rem';
         recipe.style.fontWeight = 'normal';
         recipe.style.color = "#000";
+        recipe.style.marginBottom = '1rem';
 
         // append price to textDiv
         const price = document.createElement('p');
@@ -83,6 +86,7 @@ window.addEventListener('load', function(){
         price.style.fontWeight = 'normal';
         price.style.color = "#000";
         price.style.marginTop = 'auto';
+        price.style.placeSelf = 'flex-end';
 
         //add  ron text to price
         price.appendChild(document.createTextNode(' RON'));
