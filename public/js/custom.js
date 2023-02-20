@@ -7,86 +7,33 @@ window.addEventListener('load', function(){
         // create modal 500px x 500px
         const modal = document.createElement('div');
         modal.classList.add('modal');
-        modal.style.width = '70%';
-        modal.style.height = '500px';
-        modal.style.backgroundColor = 'white';
-        modal.style.position = 'fixed';
-        modal.style.top = '50%';
-        modal.style.left = '50%';
-        modal.style.transform = 'translate(-50%, -50%)';
-        modal.style.zIndex = '1000';
-        modal.style.display = 'block';
-        modal.style.maxWidth = '1000px';
 
         //create background behind modal
         const background = document.createElement('div');
         background.classList.add('background');
-        background.style.width = '100%';
-        background.style.height = '100%';
-        background.style.backgroundColor = 'rgba(0,0,0,0.5)';
-        background.style.position = 'fixed';
-        background.style.top = '0';
-        background.style.left = '0';
-        background.style.zIndex = '999';
 
         // append image to modal width:80% of modal
         const image = document.createElement('img');
         image.src = itemData.image;
-        image.style.width = '50%';
-        image.style.height = '100%';
-        image.style.display = 'block';
-        //float left
-        image.style.float = 'left';
 
         // div for text width 40% of modal
         const textDiv = document.createElement('div');
-        textDiv.style.width = '50%';
-        textDiv.style.height = '100%';
-        textDiv.style.float = 'right';
-        textDiv.style.display = 'flex';
-        textDiv.style.flexDirection = 'column';
 
         // append title to textDiv
         const title = document.createElement('h2');
         title.innerHTML = itemData.title;
-        title.style.margin = '0';
-        title.style.padding = '0';
-        title.style.fontSize = '1.5rem';
-        title.style.fontWeight = 'bold';
-        title.style.color = "#da9f5b";
-        title.style.alignSelf = "center";
-        title.style.marginBottom = '1rem';
 
         // append description to textDiv
         const description = document.createElement('p');
         description.innerHTML = itemData.description;
-        description.style.margin = '0';
-        description.style.padding = '0';
-        description.style.fontSize = '1rem';
-        description.style.fontWeight = 'normal';
-        description.style.color = "#000";
-        description.style.marginBottom = '1rem';
 
         // append recipe to textDiv
         const recipe = document.createElement('p');
         recipe.innerHTML = itemData.recipe;
-        recipe.style.margin = '0';
-        recipe.style.padding = '0';
-        recipe.style.fontSize = '1rem';
-        recipe.style.fontWeight = 'normal';
-        recipe.style.color = "#000";
-        recipe.style.marginBottom = '1rem';
 
         // append price to textDiv
         const price = document.createElement('p');
         price.innerHTML = itemData.price;
-        price.style.margin = '0';
-        price.style.padding = '0';
-        price.style.fontSize = '1rem';
-        price.style.fontWeight = 'normal';
-        price.style.color = "#000";
-        price.style.marginTop = 'auto';
-        price.style.placeSelf = 'flex-end';
 
         //add  ron text to price
         price.appendChild(document.createTextNode(' RON'));
