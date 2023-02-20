@@ -105,17 +105,23 @@ window.addEventListener('load', function(){
     const coffeItemsWrapper  = document.getElementById("coffee-items");
 
     coffeItemsWrapper.querySelectorAll('.menu-item').forEach(function(item){
+        console.log(item);
         item.addEventListener('click', function(){
 
+            console.log("here");
             //if element is has class .menu-item.content
             if(!item.classList.contains('menu-item-content')) return;
 
+
+            console.log('here2');
             // get id of clicked item
             const id = item.id;
 
             fetch("/data/coffees.json").then(function(response){
                 return response.json();
             }).then(function(data){
+
+                console.log(data);
 
                 // get item data based on id
                 const itemData = data.find(function(item){
