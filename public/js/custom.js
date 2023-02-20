@@ -30,10 +30,16 @@ window.addEventListener('load', function(){
         // append description to textDiv
         const description = document.createElement('p');
         description.innerHTML = itemData.description;
+        description.appendBefore(document.createTextNode('Descriere:<br>'));
 
         // append recipe to textDiv
         const recipe = document.createElement('p');
         recipe.innerHTML = itemData.recipe;
+        recipe.appendBefore(document.createTextNode('Reteta:<br>'));
+
+        const ingeriendts = document.createElement('p');
+        ingeriendts.innerHTML = itemData.ingredients;
+        ingeriendts.appendBefore(document.createTextNode('Ingrediente:<br>'));
 
         // append price to textDiv
         const price = document.createElement('p');
