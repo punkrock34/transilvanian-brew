@@ -33,10 +33,6 @@
     <!-- Meniu Start -->
     <div class="container-fluid pt-5">
         <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Meniu și Prețuri</h4>
-                <h3 class="display-4">Prețuri Competitive</h3>
-            </div>
             <div class="row">
                 <div class="col-lg-12" id = "coffee-items">
 
