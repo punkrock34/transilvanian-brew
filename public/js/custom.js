@@ -10,6 +10,7 @@ window.addEventListener('load', function(){
 
         const closeButtonMobile = document.createElement('i');
         closeButtonMobile.classList.add('fas', 'fa-times', 'close-button-mobile');
+        closeButtonMobile.zIndex = 1000;
 
         //create background behind modal
         const background = document.createElement('div');
@@ -50,6 +51,7 @@ window.addEventListener('load', function(){
         //append image and textDiv to modal
         modal.appendChild(image);
         modal.appendChild(textDiv);
+        modal.appendChild(closeButtonMobile);
 
         document.body.appendChild(modal);
         document.body.appendChild(background);
