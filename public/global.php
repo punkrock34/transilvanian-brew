@@ -4,7 +4,7 @@
     $url = $_SERVER['REQUEST_URI'];
 
     $lang = "ro";
-    $page = str_replace($base, "", str_replace(".html", "", $url));
+    echo $page = str_replace($base, "", str_replace(".html", "", $url));
 
     if (strpos($url, 'index.php') !== false || strpos($url, 'index.html') !== false) {
         $url = str_replace("index.php", "", $url);
