@@ -105,15 +105,11 @@ window.addEventListener('load', function(){
     const coffeItemsWrapper  = document.getElementById("coffee-items");
 
     coffeItemsWrapper.querySelectorAll('.menu-item').forEach(function(item){
-        console.log(item);
         item.addEventListener('click', function(){
 
-            console.log("here");
-            //if element is has class .menu-item.content
-            if(!item.classList.contains('menu-item-content')) return;
+            //if element is not of type p or i then return
+            if(item.tagName !== 'P' && item.tagName !== 'I') return;
 
-
-            console.log('here2');
             // get id of clicked item
             const id = item.id;
 
