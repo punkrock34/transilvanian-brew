@@ -101,7 +101,13 @@ window.addEventListener('load', function(){
             //get id from parent
             const id = parent.id;
 
-            fetch("/data/coffees.json").then(function(response){
+            //add cors to fetch
+            fetch("/data/coffees.json", {
+                headers : {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+            }).then(function(response){
                 return response.json();
             }).then(function(data){
 

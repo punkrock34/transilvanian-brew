@@ -119,7 +119,7 @@
     <div class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom">
         <div class="container py-5">
             <h1 class="display-3 text-primary mt-3">Reducere specială: 10% la cafeaua preferată a clienților noștri!</h1>
-            <h4 class="text-white font-weight-normal mb-4 pb-3">Bucurați-vă de o experiență unică de savoare și arome cu cafeaua noastră proaspăt prăjită și beneficiați de o reducere specială de 10% între 20-28 februarie 2023. Înscrieți-vă cu adresa dvs. de e-mail pentru a beneficia de această ofertă și pentru a descoperi mai multe despre cafeaua noastră exclusivistă./h4>
+            <h4 class="text-white font-weight-normal mb-4 pb-3">Bucurați-vă de o experiență unică de savoare și arome cu cafeaua noastră proaspăt prăjită și beneficiați de o reducere specială de 10% între 20-28 februarie 2023. Înscrieți-vă cu adresa dvs. de e-mail pentru a beneficia de această ofertă și pentru a descoperi mai multe despre cafeaua noastră exclusivistă.</h4>
                 <form class="form-inline justify-content-center mb-4">
                     <div class="input-group">
                         <input type="text" class="form-control p-4" placeholder="Your Email" style="height: 60px;">
