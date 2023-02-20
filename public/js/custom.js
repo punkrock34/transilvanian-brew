@@ -30,7 +30,7 @@ window.addEventListener('load', function(){
         // append image to modal width:80% of modal
         const image = document.createElement('img');
         image.src = itemData.image;
-        image.style.width = '60%';
+        image.style.width = '50%';
         image.style.height = '100%';
         image.style.display = 'block';
         //float left
@@ -38,11 +38,11 @@ window.addEventListener('load', function(){
 
         // div for text width 40% of modal
         const textDiv = document.createElement('div');
-        textDiv.style.width = '40%';
+        textDiv.style.width = '50%';
         textDiv.style.float = 'right';
         textDiv.style.display = 'flex';
         textDiv.style.flexDirection = 'column';
-
+        textDiv.style.justifyContent = 'space-between';
 
         // append title to textDiv
         const title = document.createElement('h2');
@@ -52,6 +52,7 @@ window.addEventListener('load', function(){
         title.style.fontSize = '1.5rem';
         title.style.fontWeight = 'bold';
         title.style.color = "#da9f5b";
+        title.style.alignSelf = "center";
 
         // append description to textDiv
         const description = document.createElement('p');
@@ -90,8 +91,7 @@ window.addEventListener('load', function(){
         textDiv.appendChild(recipe);
         textDiv.appendChild(price);
 
-        // append image and textDiv to modal
-        modal.appendChild(closeButton);
+        //append image and textDiv to modal
         modal.appendChild(image);
         modal.appendChild(textDiv);
 
