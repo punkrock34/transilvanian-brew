@@ -40,38 +40,58 @@ window.addEventListener('load', function(){
         // append image to modal width:80% of modal
         const image = document.createElement('img');
         image.src = itemData.image;
-        image.style.width = '80%';
-        image.style.margin = '0 auto';
+        image.style.width = '60%';
         image.style.display = 'block';
+        //float left
+        image.style.float = 'left';
 
-        // append title, description recipe price to modal as text width:20% on right
+        // div for text width 40% of modal
+        const textDiv = document.createElement('div');
+        textDiv.style.width = '40%';
+        textDiv.style.float = 'right';
+        textDiv.style.display = 'flex';
+        textDiv.style.flexDirection = 'column';
+
+
+        // append title to textDiv
         const title = document.createElement('h2');
         title.innerHTML = itemData.title;
-        title.style.width = '20%';
-        title.style.margin = '0 auto';
-        title.style.display = 'block';
-        title.style.textAlign = 'center';
+        title.style.margin = '0';
+        title.style.padding = '0';
+        title.style.fontSize = '1.5rem';
+        title.style.fontWeight = 'bold';
+        title.style.color = "#da9f5b";
 
+        // append description to textDiv
         const description = document.createElement('p');
         description.innerHTML = itemData.description;
-        description.style.width = '20%';
-        description.style.margin = '0 auto';
-        description.style.display = 'block';
-        description.style.textAlign = 'center';
+        description.style.margin = '0';
+        description.style.padding = '0';
+        description.style.fontSize = '1rem';
+        description.style.fontWeight = 'normal';
+        description.style.color = "#000";
 
+        // append recipe to textDiv
         const recipe = document.createElement('p');
         recipe.innerHTML = itemData.recipe;
-        recipe.style.width = '20%';
-        recipe.style.margin = '0 auto';
-        recipe.style.display = 'block';
-        recipe.style.textAlign = 'center';
+        recipe.style.margin = '0';
+        recipe.style.padding = '0';
+        recipe.style.fontSize = '1rem';
+        recipe.style.fontWeight = 'normal';
+        recipe.style.color = "#000";
 
+        // append price to textDiv
         const price = document.createElement('p');
         price.innerHTML = itemData.price;
-        price.style.width = '20%';
-        price.style.margin = '0 auto';
-        price.style.display = 'block';
-        price.style.textAlign = 'center';
+        price.style.margin = '0';
+        price.style.padding = '0';
+        price.style.fontSize = '1rem';
+        price.style.fontWeight = 'normal';
+        price.style.color = "#000";
+        //justify self flex-end to align to bottom right of div
+        price.style.alignSelf = 'flex-end';
+        price.style.justifySelf = 'flex-end';
+
 
 
         // append modal to body
@@ -93,8 +113,11 @@ window.addEventListener('load', function(){
     function deleteModal(){
         const modal = document.querySelector('.modal');
         const background = document.querySelector('.background');
-        modal.remove();
-        background.remove();
+        const closeButton = document.getElementById('modal-close');
+        // remove modal and backgroung from body
+        document.body.removeChild(modal);
+        document.body.removeChild(background);
+
         // remove event listener from close button
         closeButton.removeEventListener('click', function(){
             deleteModal();
