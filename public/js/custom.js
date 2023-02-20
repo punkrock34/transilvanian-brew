@@ -113,10 +113,10 @@ window.addEventListener('load', function(){
                 return response.json();
             }).then(function(data){
 
-                console.log(data);
-
-                // get item data based on id
+                // get item from json based on id, array of objects
                 const itemData = data.find(function(item){
+                    console.log(item);
+                    console.log(item.id);
                     return item.id === id;
                 });
 
