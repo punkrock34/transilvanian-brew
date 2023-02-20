@@ -118,10 +118,7 @@ window.addEventListener('load', function(){
 
                 // get item from json based on id, array of objects
                 const itemData = data.find(function(item){
-
-                    console.log(id, item.id)
-
-                    return item.id === id;
+                    return item.id == id;
                 });
 
                 // create modal
