@@ -1,6 +1,3 @@
-//import coffee.json  from data folder
-import coffee from '../data/coffee.json';
-
 window.addEventListener('load', function(){
 
     function createModal(itemData){
@@ -112,13 +109,24 @@ window.addEventListener('load', function(){
             // get id of clicked item
             const id = item.id;
 
-            // get data of clicked item
-            const itemData = coffee.find(function(item){
-                return item.id === id;
+            fetch("/data/coffees.json").then(function(response){
+                return response.json();
+            }).then(function(data){
+
+                // get item data based on id
+                const itemData = data.find(function(item){
+                    return item.id === id;
+                });
+
+                console.log(itemData);
+
+                // create modal
+                createModal(itemData);
+
+            }).catch(function(error){
+                console.log(error);
             });
 
-            // create modal
-            createModal(itemData);
         });
     });
 
