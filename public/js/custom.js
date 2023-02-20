@@ -83,6 +83,11 @@ window.addEventListener('load', function(){
         modal.appendChild(price);
         document.body.appendChild(modal);
         document.body.appendChild(background);
+
+        // add event listener to close button
+        closeButton.addEventListener('click', function(){
+            deleteModal();
+        }
     }
 
     function deleteModal(){
@@ -90,12 +95,11 @@ window.addEventListener('load', function(){
         const background = document.querySelector('.background');
         modal.remove();
         background.remove();
+        // remove event listener from close button
+        closeButton.removeEventListener('click', function(){
+            deleteModal();
+        });
     }
-
-    // event listener for close button
-    document.getElementById("modal-close").addEventListener('click', function(e){
-        deleteModal();
-    });
 
     // coffee items
     const coffeItemsWrapper  = document.getElementById("coffee-items");
