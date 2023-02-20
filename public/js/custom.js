@@ -87,7 +87,7 @@ window.addEventListener('load', function(){
         // add event listener to close button
         closeButton.addEventListener('click', function(){
             deleteModal();
-        }
+        });
     }
 
     function deleteModal(){
