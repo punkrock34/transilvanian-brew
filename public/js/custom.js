@@ -29,17 +29,14 @@ window.addEventListener('load', function(){
 
         // append description to textDiv
         const description = document.createElement('p');
-        description.innerHTML = itemData.description;
-        description.appendBefore(document.createTextNode('Descriere:<br>'));
+        description.innerHTML = `Descriere:<br>${itemData.description}`;
 
         // append recipe to textDiv
         const recipe = document.createElement('p');
-        recipe.innerHTML = itemData.recipe;
-        recipe.appendBefore(document.createTextNode('Reteta:<br>'));
+        recipe.innerHTML = `Reteta:<br>${itemData.recipe}`;
 
-        const ingeriendts = document.createElement('p');
-        ingeriendts.innerHTML = itemData.ingredients;
-        ingeriendts.appendBefore(document.createTextNode('Ingrediente:<br>'));
+        const ingredients = document.createElement('p');
+        ingredients.innerHTML = `Ingrediente:<br>${itemData.ingredients}`;
 
         // append price to textDiv
         const price = document.createElement('p');
@@ -52,6 +49,7 @@ window.addEventListener('load', function(){
         textDiv.appendChild(title);
         textDiv.appendChild(description);
         textDiv.appendChild(recipe);
+        textDiv.appendChild(ingredients);
         textDiv.appendChild(price);
 
         //append image and textDiv to modal

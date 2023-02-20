@@ -9812,4 +9812,23 @@ h6,
     cursor: pointer;
     padding:1rem;
   }
+
+  //order .menu-items for mobile 2 items per row
+  #coffee-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .menu-item {
+    position: relative;
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+  }
+
 }
